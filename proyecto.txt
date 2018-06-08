@@ -1,0 +1,74 @@
+//CREAR TABLA
+
+CREATE TABLE skate(
+id serial,
+ 
+marcas varchar (20),
+
+patinetas varchar (20),
+
+equipoSeguridad varchar (20),
+
+repuestos varchar(20),
+
+accesorios varchar(20),
+
+PRIMARY KEY (id)
+);
+
+
+
+// INSERTAR DATOS 
+
+
+INSERT INTO (marcas,patinetas,equipoSeguridad,repuestos,accesorios)
+
+VALUES('adidas','Longboard','casco','ejes','zapatos'),
+
+('antihero','Cruiser','rodilleras','ruedas','pantalon'),
+
+('antix','Freeboard','casco','Elevadores','camiseta'),
+
+('anuell','Waveboard','coderas','Rodamientos','saco'),
+
+('baker','T-Board','rodilleras','tornillos','camiseta'),
+
+('dvc','Carveboard','casco','riser pad','zapatos')
+
+('flip','Hamboard','rodilleras','rodaminto','camiseta')
+
+('globe','Freeboard','coderas','ruedas','blusa')
+
+('huf','Carveboard','casco','eje','pantalon')
+
+('carhartt','Flowboard','coderas','loja','zapatos');
+
+
+
+
+//consultar la tabla 
+
+SELECT * FROM skate;
+
+// CREAR UNA NUEVA COLUMNA
+
+ALTER TABLE skate ADD COLUMN cliente CHARACTER VARYING(20)
+
+
+//añadir not null en la columna
+
+ALTER TABLE cliente
+
+alter column socket set not null
+
+//añadir un valor a la columna cliente
+
+update skate set cliente = 'juan';
+
+// QUITAR NOT NULL
+
+ALTER TABLE cliente
+ALTER COLUMN SOCKET DROP NOT NULL
+
+
+
